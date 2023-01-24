@@ -4,8 +4,10 @@ import './App.css'
 function App() {
   const [randomNumber, setRandomNumber] = useState(0)
 
-  const generateNumber = (max) => {
-    return Math.floor(Math.random() * max)
+  const generateNumber = (min, max) => {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
   }
 
   return (
@@ -23,7 +25,7 @@ function App() {
         <hr className='line'></hr>
 
         <div className='button-container'>
-          <button className='button reset' onClick={() => setRandomNumber((randomNumber) => randomNumber = generateNumber(500))}>↩ Generate</button>
+          <button className='button reset' onClick={() => setRandomNumber((randomNumber) => randomNumber = generateNumber(-500, 500))}>↩ Generate</button>
         </div>
 
       </div>
