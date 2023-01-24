@@ -10,7 +10,7 @@
   align-items: center;
   padding: 2rem;
   border-radius: 16px;
-  height: 20rem;
+  height: 24rem;
   width: 40rem;
   margin-top: 20rem;
   background-color: rgb(27, 82, 110);
@@ -38,11 +38,12 @@ h2 {
   padding-top: 1.5rem;
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button {
-  width: 8.8rem;
+  width: 12rem;
   height: 3rem;
   border-radius: 8px;
   cursor: pointer;
@@ -60,16 +61,30 @@ h2 {
   transform: scale(0.95);
 }
 
-.subtract {
+.input-button-wrapper {
+  border-right: solid white;
+  margin-right: 3rem;
+}
+
+.input-fields {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.field {
+  color: black;
+  height: 2rem;
+  text-align: center;
+}
+
+.clear {
+  border: solid white;
   background-color: rgb(139, 21, 21);
 }
 
-.reset {
-  color: black;
-}
-
-.addition {
-  background-color: green;
+.generate {
+  border: solid white;
+  background-color: rgb(37, 111, 37);
 }
 
 .negative {
