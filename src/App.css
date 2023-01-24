@@ -1,0 +1,94 @@
+.app {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 16px;
+  height: 20rem;
+  width: 40rem;
+  margin-top: 20rem;
+  background-color: rgb(27, 82, 110);
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 2rem;;
+}
+
+h2 {
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.line {
+  border-top: solid white;
+  width: 100%;
+}
+
+.button-container {
+  padding-top: 1.5rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.button {
+  width: 8.8rem;
+  height: 3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition:
+    background-color 250ms ease-in-out,
+    transform 50ms ease-in-out;
+}
+
+.button:hover {
+  box-shadow: rgb(237, 222, 13) 0px 5px 15px;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.subtract {
+  background-color: rgb(139, 21, 21);
+}
+
+.reset {
+  color: black;
+}
+
+.addition {
+  background-color: green;
+}
+
+.negative {
+  color: rgb(139, 21, 21);
+  text-shadow: 2px 2px 25px white;
+  animation: pulse 500ms ease-in-out;
+}
+
+.positive {
+  color:rgb(237, 222, 13);
+  text-shadow: 2px 2px 25px rgb(184, 210, 165);
+  animation: pulse 500ms ease-in-out
+}
+
+@keyframes pulse {
+  0%, 100%{
+    transform:scale(1);
+  }
+  50%{
+    transform:scale(1.2);
+  }
+}
